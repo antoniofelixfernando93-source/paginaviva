@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Página Viva – Ebooks</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F1F8;--panel:#FFFFFF;--ink:#241638;--mut:#625A75;--line:#DDD8EA;--cta:#241638;--ctat:#FFFFFF;--hi:#F2B705;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#150E22;--panel:#211833;--ink:#F1EDFA;--mut:#A99FC0;--line:#35294D;--cta:#F2B705;--ctat:#241638;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#150E22;--panel:#211833;--ink:#F1EDFA;--mut:#A99FC0;--line:#35294D;--cta:#F2B705;--ctat:#241638;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,sans-serif;line-height:1.55}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;margin:0;letter-spacing:-.02em}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{padding:18px 0}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:1.3rem}
+a:focus-visible{outline:3px solid var(--hi);outline-offset:2px}
+.hero{padding:20px 0 44px}
+.hero h1{font-size:clamp(2.5rem,12vw,4.4rem);line-height:1;font-weight:800}
+.hero p{font-size:1.15rem;color:var(--mut);max-width:30ch;margin:16px 0 24px}
+.btn{display:inline-block;background:var(--cta);color:var(--ctat);border-radius:12px;padding:14px 22px;font-weight:600;text-decoration:none}
+.stack{display:flex;margin-top:36px;padding-left:12px}
+.stack .cv{width:112px;height:160px;margin-left:-12px;box-shadow:-4px 4px 0 rgba(0,0,0,.12)}
+.stack .cv:nth-child(1){transform:rotate(-5deg)}.stack .cv:nth-child(2){transform:rotate(4deg) translateY(8px)}
+.cv{border-radius:4px 10px 10px 4px;padding:12px 10px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;border-left:6px solid rgba(0,0,0,.25);font-family:Fraunces,Georgia,serif;font-weight:800;line-height:1.1;font-size:1rem;overflow:hidden}
+.cv small{font-family:Figtree,sans-serif;font-weight:600;font-size:.65rem;opacity:.9}
+h2{font-size:1.9rem;margin:0 0 18px}
+.grid{display:grid;gap:14px}
+.item{display:grid;grid-template-columns:104px 1fr;gap:16px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px}
+.item .cv{width:104px;height:148px}
+.item h3{font-size:1.25rem;line-height:1.2}
+.item p{margin:6px 0 12px;color:var(--mut);font-size:.95rem}
+.buy{display:inline-block;background:var(--cta);color:var(--ctat);border-radius:10px;padding:11px 18px;font-weight:600;text-decoration:none}
+.how{margin:44px 0 0;padding:22px;border-radius:16px;background:var(--ink);color:var(--bg)}
+.how ol{margin:12px 0 0;padding-left:20px}.how li{margin:4px 0}
+footer{padding:36px 0 56px;color:var(--mut);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><span class="logo">Página Viva</span></header>
+
+<section class="hero">
+<h1>Aprenda algo novo hoje à noite.</h1>
+<p>Ebooks práticos, direto ao ponto. Compre online e leia no celular.</p>
+<a class="btn" href="#catalogo">Ver ebooks</a>
+<div class="stack" aria-hidden="true">
+<div class="cv" style="background:#0E7C7B">Comece do zero</div>
+<div class="cv" style="background:#5B3FA8">English passo a passo</div>
+</div>
+</section>
+
+<section id="catalogo">
+<h2>Nossos ebooks</h2>
+<div class="grid">
+<article class="item">
+<div class="cv" style="background:#0E7C7B">Comece do zero<small>Ebook</small></div>
+<div>
+<h3>Comece do zero: aprenda a criar e vender ebooks</h3>
+<p>Do primeiro passo até a primeira venda: como criar o seu ebook e vendê-lo online.</p>
+<a class="buy" href="https://pagar.co.mz/p/comece-do-zero-aprenda-a-criar-e-vender-ebooks-p-5aq6j9" target="_blank" rel="noopener">Comprar agora</a>
+</div>
+</article>
+<article class="item">
+<div class="cv" style="background:#5B3FA8">English passo a passo<small>Ebook</small></div>
+<div>
+<h3>English passo a passo: guia prático de inglês</h3>
+<p>Aprenda inglês com um guia prático, em passos simples e fáceis de seguir.</p>
+<a class="buy" href="https://pagar.co.mz/p/english-passo-a-passo-guia-pratico-de-ingles-par-d1wio7" target="_blank" rel="noopener">Comprar agora</a>
+</div>
+</article>
+</div>
+</section>
+
+<section class="how">
+<h2 style="font-size:1.4rem;margin:0">Como funciona</h2>
+<ol><li>Escolha o ebook e toque em "Comprar agora".</li><li>Conclua o pagamento na página que abrir.</li><li>Receba o seu ebook e comece a ler.</li></ol>
+</section>
+
+<footer>Página Viva · Ebooks</footer>
+</div>
+</body>
+</html>
